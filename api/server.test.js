@@ -16,6 +16,6 @@ afterAll(async () => {
 describe('[GET] /hobbits', () => {
   test('responds with all the hobbits', async () => {
     const res = await request(server).get('/hobbits')
-    
+    expect(res.status).toBe(200)
   })
 })
