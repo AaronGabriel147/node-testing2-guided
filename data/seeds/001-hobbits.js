@@ -14,4 +14,4 @@ exports.seed = function(knex, Promise) {
     });
 };
 
-exports.hobbits = 
+exports.hobbits = hobbits

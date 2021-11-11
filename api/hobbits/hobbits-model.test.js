@@ -1,5 +1,6 @@
 const Hobbit = require('./hobbits-model')
 const db = require('../../data/dbConfig')
+const { hobbits } = require('../../data/seeds/001-hobbits')
 
 test('is testing environment', () => {
   expect(process.env.NODE_ENV).toBe('testing')
