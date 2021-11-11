@@ -35,6 +35,8 @@ describe('[POST] /hobbits', () => {
     expect(res.body).toMatchObject({ id: 5, name: "bilbo" })
   })
   test('responds with status 201', async () => {
-    // YOU
+    const res = await request(server)
+      .post('/hobbits').send({ name: 'bilbo' })
+    expect(res.status).toBe(201)
   })
 })
