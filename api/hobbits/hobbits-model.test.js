@@ -6,7 +6,8 @@ test('is testing environment', () => {
 })
 
 beforeAll(async () => {
-  await db.micrt
+  await db.migrate.rollback()
+  await db.migrate.latest()
 })
 
 beforeEach(async () => {
