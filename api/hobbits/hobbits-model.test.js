@@ -30,7 +30,7 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
       expect(data).toHaveLength(4)
     })
     test('resolves the correct shapes', async () => {
-      expect(data).toEqual(hobbits)
+      expect(data).toMatchObject(hobbits)
     })
   })
   describe('getById()', () => {
