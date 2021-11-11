@@ -31,7 +31,7 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
     })
     test('resolves the correct shapes', async () => {
       expect(data).toMatchObject(hobbits)
-      expect(data).toMatchObject([
+      expect(data).toEqual([
         {
           "id": 1,
           "name": "sam"
