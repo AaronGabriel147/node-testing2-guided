@@ -29,7 +29,7 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
       expect(data).toHaveLength(4)
     })
     test('resolves the correct shapes', async () => {
-      expect([
+      expect(data).toMatchObject([
         {
           "id": 1,
           "name": "sam"
