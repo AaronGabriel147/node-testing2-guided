@@ -20,7 +20,7 @@ afterAll(async () => {
 
 describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
   describe('getAll()', () => {
-
+    test('resolves all hobbits in the db')
   })
   describe('getById()', () => {
 
