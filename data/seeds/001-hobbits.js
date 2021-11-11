@@ -14,4 +14,4 @@ exports.seed = function(knex, Promise) {
     });
 };
 
-exports.hobbits = hobbits
+exports.hobbits = hobbits // export const hobbits = []
