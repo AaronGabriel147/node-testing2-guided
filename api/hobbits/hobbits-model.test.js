@@ -31,6 +31,24 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
     })
     test('resolves the correct shapes', async () => {
       expect(data).toMatchObject(hobbits)
+      expect(data).toMatchObject([
+        {
+          "id": 1,
+          "name": "sam"
+        },
+        {
+          "id": 2,
+          "name": "frodo"
+        },
+        {
+          "id": 3,
+          "name": "pippin"
+        },
+        {
+          "id": 4,
+          "name": "merry"
+        }
+      ])
     })
   })
   describe('getById()', () => {
