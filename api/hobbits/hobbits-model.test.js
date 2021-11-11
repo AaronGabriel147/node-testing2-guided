@@ -25,7 +25,13 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
       expect(data.length).toBe(4)
       expect(data).toHaveLength(4)
     })
-    test.todo('resolves the hobbits in ')
+    test.todo('resolves the correct shapes')
+    test.todo('resolves the correct shapes')
+    test.todo('resolves the correct shapes')
+    test.todo('resolves the correct shapes')
+    test.todo('resolves the correct shapes')
+    test.todo('resolves the correct shapes')
+    test.todo('resolves the correct shapes')
   })
   describe('getById()', () => {
 
