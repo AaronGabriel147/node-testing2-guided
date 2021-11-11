@@ -25,7 +25,9 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
       expect(data.length).toBe(4)
       expect(data).toHaveLength(4)
     })
-    test.todo('resolves the correct shapes')
+    test('resolves the correct shapes', async () => {
+      const data = await Hobbit.getAll()
+    })
   })
   describe('getById()', () => {
 
