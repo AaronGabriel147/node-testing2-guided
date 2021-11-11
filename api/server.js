@@ -20,8 +20,8 @@ server.get("/hobbits", (req, res) => {
     });
 });
 
-server.get("/hobbits/id", (req, res) => {
-  res.end()
+server.get("/hobbits/:id", (req, res) => {
+  res.json(await Hobbits.)
 });
 
 server.post("/hobbits", (req, res) => {
