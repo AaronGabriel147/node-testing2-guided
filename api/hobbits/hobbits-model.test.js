@@ -26,12 +26,6 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
       expect(data).toHaveLength(4)
     })
     test.todo('resolves the correct shapes')
-    test.todo('resolves the correct shapes')
-    test.todo('resolves the correct shapes')
-    test.todo('resolves the correct shapes')
-    test.todo('resolves the correct shapes')
-    test.todo('resolves the correct shapes')
-    test.todo('resolves the correct shapes')
   })
   describe('getById()', () => {
 
