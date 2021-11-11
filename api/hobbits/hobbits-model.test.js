@@ -5,8 +5,14 @@ test('is testing environment', () => {
   expect(process.env.NODE_ENV).toBe('testing')
 })
 
-beforeAll()
+beforeAll(async () => {
+  await db.micrt
+})
 
-beforeEach()
+beforeEach(async () => {
+  await
+})
 
-afterAll()
+afterAll(async () => {
+  await
+})
