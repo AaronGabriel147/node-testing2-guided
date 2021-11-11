@@ -52,7 +52,7 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
     })
   })
   describe('getById()', () => {
-
+    test('')
   })
   describe('insert()', () => {
 
