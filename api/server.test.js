@@ -30,7 +30,10 @@ describe('[GET] /hobbits/:id', () => {
 
 describe('[POST] /hobbits', () => {
   test('responds with new hobbit', async () => {
-    const res = await request(server).post('/hobbits')
+    const res = await request(server)
+      .post('/hobbits').send({ name: 'bilbo' })
+    // the correct shape comes back
+    // YOU!
   })
   test('responds with status 201', async () => {
 
