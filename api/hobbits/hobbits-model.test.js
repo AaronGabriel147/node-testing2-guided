@@ -19,5 +19,13 @@ afterAll(async () => {
 })
 
 describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
-  
+  describe('getAll()', () => {
+
+  })
+  describe('getById()', () => {
+
+  })
+  describe('insert()', () => {
+
+  })
 })
