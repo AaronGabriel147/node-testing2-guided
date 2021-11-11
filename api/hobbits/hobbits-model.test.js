@@ -52,7 +52,11 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
     })
   })
   describe('getById()', () => {
-    test('')
+    test('returns the correct hobbit', async () => {
+      // hit the function, get hobbit with id = 1
+      // assert that the data is { id: 1, name: 'sam' }
+      // YOU
+    })
   })
   describe('insert()', () => {
 
