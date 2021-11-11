@@ -9,7 +9,7 @@
     "seed": "knex seed:run",
     "ketchup": "git fetch && git reset --hard origin/lecture",
     "resetdb": "npm run rollback && npm run migrate && npm run seed",
-    "test": "jest"
+    "test": "NODE_ENV=testing jest"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
