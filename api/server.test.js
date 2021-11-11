@@ -17,6 +17,7 @@ describe('[GET] /hobbits', () => {
   test('responds with all the hobbits', async () => {
     const res = await request(server).get('/hobbits')
     expect(res.status).toBe(200)
+    expect(res.body).toHaveLength(4)
   })
 })
 
@@ -24,5 +25,11 @@ describe('[GET] /hobbits/:id', () => {
   test('responds with sam', async () => {
     const res = await request(server).get('/hobbits/1')
     expect(res.body).toMatchObject({ id: 1, name: 'sam' })
+  })
+})
+
+describe('[POST] /hobbits', () => {
+  test('responds with new hobbit', async () => {
+
   })
 })
