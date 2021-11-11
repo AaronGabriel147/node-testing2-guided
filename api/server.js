@@ -4,7 +4,7 @@ const Hobbits = require("./hobbits/hobbits-model.js");
 
 const server = express();
 
-server.use(express.json());
+server.use(express.json()); // this
 
 server.get("/", (req, res) => {
   res.status(200).json({ api: "up" });
