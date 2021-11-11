@@ -18,7 +18,7 @@ afterAll(async () => {
   await db.destroy()
 })
 
-describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
+describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
   describe('getAll()', () => {
     let data
     beforeEach(async () => {
@@ -29,7 +29,24 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
       expect(data).toHaveLength(4)
     })
     test('resolves the correct shapes', async () => {
-      // asseting!
+      expect([
+        {
+          "id": 1,
+          "name": "sam"
+        },
+        {
+          "id": 2,
+          "name": "frodo"
+        },
+        {
+          "id": 3,
+          "name": "pippin"
+        },
+        {
+          "id": 4,
+          "name": "merry"
+        }
+      ])
     })
   })
   describe('getById()', () => {
