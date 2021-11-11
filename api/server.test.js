@@ -23,6 +23,7 @@ describe('[GET] /hobbits', () => {
 
 describe('[GET] /hobbits/:id', () => {
   test('responds with sam', async () => {
-    // YOU!!!
+    const res = await request(server).get('/hobbits/1')
+    expect(res.body).toMatchObject({ id: 1, name: 'sam' })
   })
 })
