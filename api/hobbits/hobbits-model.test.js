@@ -25,6 +25,7 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
       expect(data.length).toBe(4)
       expect(data).toHaveLength(4)
     })
+    test.todo('resolves the hobbits in ')
   })
   describe('getById()', () => {
 
