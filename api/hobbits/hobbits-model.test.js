@@ -56,7 +56,7 @@ describe('Hobbit model', /* NO ASYNC HERE!!! */() => {
       // hit the function, get hobbit with id = 1
       // assert that the data is { id: 1, name: 'sam' }
       const data = await Hobbit.getById('1')
-      expect(data).toMatchObject({ id: 1, name: 'frodo' })
+      expect(data).toMatchObject({ id: 1, name: 'sam' })
     })
   })
   describe('insert()', () => {
