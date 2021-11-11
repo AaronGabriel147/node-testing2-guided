@@ -20,13 +20,16 @@ afterAll(async () => {
 
 describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
   describe('getAll()', () => {
+    let data
+    beforeEach(async () => {
+      data = await Hobbit.getAll()
+    })
     test('resolves all hobbits in the db', async () => {
-      const data = await Hobbit.getAll()
       expect(data.length).toBe(4)
       expect(data).toHaveLength(4)
     })
     test('resolves the correct shapes', async () => {
-      const data = await Hobbit.getAll()
+      // asseting!
     })
   })
   describe('getById()', () => {
