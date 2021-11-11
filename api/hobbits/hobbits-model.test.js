@@ -20,7 +20,10 @@ afterAll(async () => {
 
 describe('Hobbit model', /* NO ASYNC HERE!!! */ () => {
   describe('getAll()', () => {
-    test('resolves all hobbits in the db')
+    test('resolves all hobbits in the db', async () => {
+      const data = await Hobbit.getAll()
+      // ?
+    })
   })
   describe('getById()', () => {
 
