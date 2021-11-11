@@ -11,9 +11,9 @@ beforeAll(async () => {
 })
 
 beforeEach(async () => {
-  await
+  await db.seed.run()
 })
 
 afterAll(async () => {
-  await
+  await db.destroy()
 })
