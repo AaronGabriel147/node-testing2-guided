@@ -33,7 +33,7 @@ describe('[POST] /hobbits', () => {
     const res = await request(server)
       .post('/hobbits').send({ name: 'bilbo' })
     // the correct shape comes back
-    // YOU!
+    expect(res.body).toMatchObject({ id: 1, name: "bilbo" })
   })
   test('responds with status 201', async () => {
 
