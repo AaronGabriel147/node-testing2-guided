@@ -30,6 +30,9 @@ describe('[GET] /hobbits/:id', () => {
 
 describe('[POST] /hobbits', () => {
   test('responds with new hobbit', async () => {
+    const res = await request(server).post('/hobbits')
+  })
+  test('responds with status 201', async () => {
 
   })
 })
