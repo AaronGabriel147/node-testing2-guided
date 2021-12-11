@@ -9,7 +9,7 @@
     "seed": "knex seed:run",
     "ketchup": "git fetch && git reset --hard origin/lecture",
     "resetdb": "npm run rollback && npm run migrate && npm run seed",
-    "test": "cross-env NODE_ENV=testing jest --runInBand"
+    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -20,8 +20,8 @@
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.2.0",
-    "jest": "^27.3.1",
+    "eslint": "^8.4.1",
+    "jest": "^27.4.4",
     "nodemon": "^2.0.15",
     "supertest": "^6.1.6"
   },
